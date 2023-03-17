@@ -1,5 +1,5 @@
 import * as React from "react"
-import { AlertDialog, Modal, Button } from "@/components"
+import { AlertDialog, Modal, Button } from "@/ui"
 import { useOverlayTriggerState } from "react-stately"
 
 export default function App() {
