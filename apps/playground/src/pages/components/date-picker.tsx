@@ -1,4 +1,4 @@
-import { DatePicker, DateRangePicker } from "@/components"
+import { DatePicker, DateRangePicker } from "@/ui"
 import { today, getLocalTimeZone } from "@internationalized/date"
 
 export default function DatePickerPage() {
