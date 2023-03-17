@@ -1,6 +1,10 @@
-import { AriaButtonProps } from "@react-types/button"
 import * as React from "react"
-import { useButton, useFocusRing, mergeProps } from "react-aria"
+import {
+  useButton,
+  useFocusRing,
+  mergeProps,
+  AriaButtonProps,
+} from "react-aria"
 import clsx from "clsx"
 interface ButtonProps extends AriaButtonProps {
   className?: string
