@@ -1,4 +1,4 @@
-import { RangeCalendar, Calendar } from "@/components"
+import { RangeCalendar, Calendar } from "@/ui"
 import { today, getLocalTimeZone } from "@internationalized/date"
 
 export default function App() {

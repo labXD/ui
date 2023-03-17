@@ -5,7 +5,7 @@ import {
   SearchAutocomplete,
   Section,
   Select,
-} from "@/components"
+} from "@/ui"
 
 export default function ComponentsPage() {
   return (

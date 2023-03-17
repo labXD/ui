@@ -1,4 +1,4 @@
-import { DateField, TimeField } from "@/components"
+import { DateField, TimeField } from "@/ui"
 import { now, getLocalTimeZone } from "@internationalized/date"
 
 export default function App() {

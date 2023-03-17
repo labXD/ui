@@ -1,4 +1,4 @@
-import { Checkbox } from "@/components"
+import { Checkbox } from "@/ui"
 
 export default function FormPage() {
   return (
