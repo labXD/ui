@@ -21,9 +21,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>
-            {siteConfig.name} | {siteConfig.description}
-          </title>
+          <title>{siteConfig.name}</title>
           <meta key="keywords" name="keywords" content={siteConfig.keywords} />
           <meta name="description" content={siteConfig.description} />
           <link rel="canonical" href="https://labxd.com/" />
