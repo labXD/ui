@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
 import React, { useRef } from "react"
 import type { Node } from "@react-types/shared"
 import type { AriaMenuProps, MenuTriggerProps } from "@react-types/menu"

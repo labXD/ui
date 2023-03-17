@@ -4,6 +4,7 @@ import { useButton, useFocusRing, mergeProps } from "react-aria"
 import clsx from "clsx"
 interface ButtonProps extends AriaButtonProps {
   className?: string
+  isPressed?: boolean
 }
 
 export const Button = React.forwardRef(
@@ -22,7 +23,7 @@ export const Button = React.forwardRef(
           {
             "ring ring-offset-2 ring-blue-400": isFocusVisible,
             "bg-gray-400": props.isDisabled,
-            "bg-blue-600": isPressed,
+            "bg-blue-600": isPressed || props.isPressed,
           }
         )}
       >
@@ -31,3 +32,5 @@ export const Button = React.forwardRef(
     )
   }
 )
+
+Button.displayName = "Button"

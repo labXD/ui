@@ -16,13 +16,11 @@ export function Modal(props: ModalProps) {
   const { modalProps, underlayProps } = useModalOverlay(props, state, ref)
   const [exited, setExited] = useState(!state.isOpen)
 
-  // Don't render anything if the modal is not open and we're not animating out.
   if (!(state.isOpen || !exited)) {
     return null
   }
 
   return (
-    // Animate opacity and backdrop blur of underlay
     <Overlay>
       <CSSTransition
         in={state.isOpen}
@@ -40,7 +38,6 @@ export function Modal(props: ModalProps) {
           className="fixed inset-0 flex justify-center z-100 bg-slate-400/20"
           {...underlayProps}
         >
-          {/* Animate modal slightly upward when entering, and downward when exiting. */}
           <CSSTransition
             in={state.isOpen}
             appear
