@@ -19,7 +19,7 @@ export function RangeCalendar(props) {
     useRangeCalendar(props, state, ref)
 
   return (
-    <div {...calendarProps} ref={ref} className="inline-block">
+    <div {...calendarProps} ref={ref} className="inline-block max-w-fit">
       <div className="flex items-center pb-4">
         <h2 className="flex-1 font-bold text-xl ml-2">{title}</h2>
         <CalendarButton {...prevButtonProps}>
