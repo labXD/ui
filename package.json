@@ -6,9 +6,7 @@
     "clean": "turbo run clean",
     "dev": "turbo run dev",
     "dev:web": "turbo run dev --filter=web",
-    "hook:pre-commit:sync": "pnpm run sync",
-    "hook:pre-commit:lint": "lint-staged",
-    "hook:pre-commit": "concurrently pnpm:hook:pre-commit:lint pnpm:hook:pre-commit:sync",
+    "hook:pre-commit": "lint-staged",
     "init": "corepack enable && corepack prepare pnpm@latest --activate && pnpm run bootstrap",
     "lint": "turbo run lint",
     "prepare": "husky install",
@@ -17,7 +15,6 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
-    "concurrently": "^7.6.0",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "git-commit-msg-linter": "^4.9.2",
