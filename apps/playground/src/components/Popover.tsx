@@ -27,12 +27,12 @@ export function Popover(props: PopoverProps) {
   )
 
   return (
-    <Overlay>
+    <Overlay portalContainer={document.body}>
       {!isNonModal && <div {...underlayProps} className="fixed inset-0" />}
       <div
         {...popoverProps}
         ref={popoverRef}
-        className={`z-10 shadow-lg border border-gray-300 bg-white rounded-md mt-2 ${className}`}
+        className={`z-10 shadow-lg border border-gray-300 bg-white rounded-md mt-2 overflow-y-auto ${className}`}
       >
         {!isNonModal && <DismissButton onDismiss={state.close} />}
         {children}

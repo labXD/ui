@@ -21,7 +21,7 @@ export function Modal(props: ModalProps) {
   }
 
   return (
-    <Overlay>
+    <Overlay portalContainer={document.body}>
       <CSSTransition
         in={state.isOpen}
         appear
